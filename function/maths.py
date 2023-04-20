@@ -13,3 +13,8 @@ def subtract(o,w):
 def multiply(s,p):
     answer =s*p
     return answer
+
+def outer_fun(a, b):
+    def inner_fun(c, d):
+        return c + d
+    return inner_fun(a, b)
